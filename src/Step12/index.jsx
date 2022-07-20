@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Child from "./Child";
 
-export default function Step13() {
+export default function Step12() {
     console.log('Root', Date.now())
 
     const [child3Value, setChild3] = useState(0)

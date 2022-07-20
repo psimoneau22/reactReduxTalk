@@ -36,4 +36,6 @@ function reducer(state, action) {
                 prop2: action.payload
             };
     }
+
+    return state;
 }

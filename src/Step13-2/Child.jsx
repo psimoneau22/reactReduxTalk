@@ -1,6 +1,6 @@
 import React from "react";
 
-const Child = ({ name, value })  => {
+function Child({ name, value }) {
     console.log(name, Date.now())
 
     return (
