@@ -1,0 +1,22 @@
+{
+  "name": "reacttalk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Philip Simoneau <philip.simoneau@rfsmart.com>",
+  "license": "MIT",
+  "scripts": {
+    "watch": "esbuild src/index.jsx --outfile=wwwroot/dist/out.js --bundle --sourcemap --watch",
+    "serve": "serve wwwroot/"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.49",
+    "serve": "^14.0.1"
+  }
+}

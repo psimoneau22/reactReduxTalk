@@ -1,0 +1,19 @@
+Realistic example, React.memo (show profiler), https://github.com/facebook/react/issues/19778
+
+: Changes
+    use memoized export
+
+
+Possible values you can expect to see as reasons for a component rerendering:
+
+"This is the first time the component rendered."
+"Context changed"
+"Hooks changed"
+"Props changed"
+"State changed"
+"The parent component rendered."
+
+
+colors slow fast / red green
+
+chrome settings, more tools, rendering, paint flashing
