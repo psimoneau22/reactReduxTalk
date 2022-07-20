@@ -1,47 +1,17 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
-import { updateProp1, updateProp2 } from "./reducer";
+import { setLoading, updateProp1 } from "./reducer";
 
-// function doSomethingAsync() {
-//     return async (dispatch, getState) => {
-//         dispatch(updateProp1(Date.now()))
+const doSomethingAsync = () => async (dispatch, getState) => {
+    dispatch(setLoading(true));
 
-//         const data = await fakeApiCall();
+    const response = await fetch('https://swapi.dev/api/people/1');
+    const data = await response.json();
 
-//         const p2Payload = getState().somePartOfTheApp.prop1 * 2;
-//         dispatch(updateProp2(p2Payload));
+    dispatch(updateProp1({
+        ...data,
+        fromState: getState().somePartOfTheApp.prop2 + 1,
+    }));
 
-//         return data;
-//     }
-// }
-
-
-
-const doSomethingAsync = createAsyncThunk(
-    'testAsync',
-    async (payload, thunkApi) => {
-
-        thunkApi.dispatch(updateProp1(Date.now()))
-
-        const data = await fakeApiCall();
-
-        const p2Payload = thunkApi.getState().somePartOfTheApp.prop1 * 2;
-        thunkApi.dispatch(updateProp2(p2Payload));
-
-        return data;
-    }
-)
-
-console.log('dx', doSomethingAsync)
-export default doSomethingAsync;
-
-
-async function fakeApiCall() {
-    const testData = {
-        p1: 'v1',
-        p2: 'v2',
-    }
-
-    return new Promise(resolve => {
-        setTimeout(() => resolve(testData), 3000);
-    })
+    return data;
 }
+
+export default doSomethingAsync;

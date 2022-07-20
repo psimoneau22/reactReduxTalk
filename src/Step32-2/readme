@@ -1,0 +1,5 @@
+render prop
+
+now I want different loading message and different rendered element
+
+example https://reactrouter.com/docs/en/v6/components/nav-link

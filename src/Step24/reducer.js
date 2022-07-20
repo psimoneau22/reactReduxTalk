@@ -1,11 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const initialState = {
+    prop1: 0,
+    prop2: 0,
+}
+
 const { reducer, actions } = createSlice({
     name: 'someActionPrefix',
-    initialState: {
-        prop1: 0,
-        prop2: 0,
-    },
+    initialState,
     reducers: {
         updateProp1: (state, action) => ({
             ...state,

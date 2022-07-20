@@ -23,7 +23,7 @@ export default function Step22() {
     )
 }
 
-function reducer(state, action) {
+function reducer(state = initialState, action) {
     switch(action.type) {
         case "update/prop1":
             return {

@@ -1,40 +1,38 @@
 import { createSlice } from "@reduxjs/toolkit";
-import doSomethingAsync from './asyncAction';
-
-console.log('d', doSomethingAsync)
 
 const { reducer, actions } = createSlice({
     name: 'someActionPrefix',
     initialState: {
         prop1: 0,
-        prop2: 0,
+        prop2: Date.now(),
         loading: false,
     },
     reducers: {
         updateProp1: (state, action) => ({
             ...state,
             prop1: action.payload,
+            loading: false,
         }),
-        updateProp2: (state, action) => ({
+        setLoading: (state, action) => ({
             ...state,
-            prop2: action.payload,
+            loading: action.payload,
         })
     },
-    extraReducers: {
-        [doSomethingAsync.pending]: (state, action) => ({
-            ...state,
-            loading: true,
-        }),
-        [doSomethingAsync.fulfilled]: (state, action) => ({
-            ...state,
-            loading: false,
-        })
-    }
+    // extraReducers: {
+    //     [doSomethingAsync.pending]: (state, action) => ({
+    //         ...state,
+    //         loading: true,
+    //     }),
+    //     [doSomethingAsync.fulfilled]: (state, action) => ({
+    //         ...state,
+    //         loading: false,
+    //     })
+    // }
 });
 
 export default reducer;
 
 export const {
     updateProp1,
-    updateProp2,
+    setLoading,
 } = actions;
