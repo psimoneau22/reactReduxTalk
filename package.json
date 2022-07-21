@@ -1,8 +1,9 @@
 {
   "name": "reacttalk",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.jsx",
   "author": "Philip Simoneau <philip.simoneau@rfsmart.com>",
+  "repository": "https://github.com/psimoneau22/reactReduxTalk",
   "license": "MIT",
   "scripts": {
     "watch": "esbuild src/index.jsx --outfile=wwwroot/dist/out.js --bundle --sourcemap --watch",
