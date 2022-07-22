@@ -14,7 +14,8 @@ import React from "react";
 // import Step from './Step26';
 // import Step from './Step31';
 // import Step from './Step32';
-import Step from './Step32-2';
+// import Step from './Step32-2';
+import Step from './Example';
 
 export default function App() {
     return (

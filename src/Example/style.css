@@ -1,0 +1,23 @@
+.area-tab.--active {
+    background-color: darkgray;
+}
+
+.list-item,
+.list-item {
+    cursor: pointer;
+}
+
+.list-item.--active,
+.list-item.--active {
+    color: red;
+}
+
+.page-button {
+    margin-left: 1rem;
+    color: blue;
+    cursor: pointer;
+}
+
+.section {
+    margin-top: 1rem;
+}
