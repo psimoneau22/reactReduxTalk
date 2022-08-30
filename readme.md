@@ -1,18 +1,18 @@
-# To run the examples :
+# To run the examples:
 
 - run the following commands from a terminal in the root of the project
 
-    1. install dependencies:
+    - install dependencies:
     ```
     npm install
     ```
 
-    2. start file watcher:
+    - start file watcher:
     ```
     npm run watch
     ```
 
-    3. start server (in a new terminal):
+    - start server (in a new terminal):
     ```
     npm run serve
     ```
