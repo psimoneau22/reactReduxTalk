@@ -4,9 +4,9 @@ import GrandParent from "./GrandParent";
 export default function Step11() {
     console.log('Root', Date.now())
 
-    const [childValue, setChild] = useState(0);
+    const [childValue, setChildValue] = useState(0);
 
-    const handleChange = () => setChild(Date.now())
+    const handleChange = () => setChildValue(Date.now())
 
     return (
         <div>

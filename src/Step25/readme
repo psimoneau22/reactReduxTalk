@@ -1,1 +1,2 @@
-thunks
+- thunks
+- async actions via redux thunk middleware

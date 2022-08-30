@@ -18,20 +18,20 @@ export default function reducer(state, action) {
                 ...state,
                 prop2: action.payload
             };
-        // case UPDATE_PROP3:
-        //     return {
-        //         ...state,
-        //         prop3: prop3Reducer(state.prop3, action)
-        //     };
+        case UPDATE_PROP3:
+            return {
+                ...state,
+                prop3: prop3Reducer(state.prop3, action)
+            };
     }
 
     return state;
 }
 
 
-// function prop3Reducer(state, action) {
-//     return {
-//         ...state,
-//         something: action.payload
-//     };
-// }
+function prop3Reducer(state, action) {
+    return {
+        ...state,
+        something: action.payload
+    };
+}

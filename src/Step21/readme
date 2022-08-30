@@ -1,10 +1,15 @@
-basic reducer
+- show basic reducer (i can dispatch objects)
+- show redux toolkit
+- show redux dev tools
+- show real reducer (readme)
+- example of real app state
 
-
-
-
+```
 {
     posts : {
+        filter: 'adfas',
+        orgs: [ 'asdf', 'adfsc'],
+        modalOpen: false.
         byId : {
             "post1" : {
                 id : "post1",
@@ -69,3 +74,4 @@ basic reducer
         allIds : ["user1", "user2", "user3"]
     }
 }
+```

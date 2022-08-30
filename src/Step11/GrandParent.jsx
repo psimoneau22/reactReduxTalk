@@ -4,9 +4,9 @@ import Parent from "./Parent";
 export default function GrandParent({ value }) {
     console.log('GrandParent', Date.now())
 
-    const [childValue, setChild] = useState(0);
+    const [childValue, setChildValue] = useState(0);
 
-    const handleChange = () => setChild(Date.now())
+    const handleChange = () => setChildValue(Date.now())
 
     return (
         <div>

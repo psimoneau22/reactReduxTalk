@@ -1,5 +1,5 @@
-render prop
-
-now I want different loading message and different rendered element
-
-example https://reactrouter.com/docs/en/v6/components/nav-link
+- render prop (now using it)
+- prop that expects a function that will be passed parameters
+- now I want different loading message and different rendered element
+- react-router uses render props
+- example https://reactrouter.com/docs/en/v6/components/nav-link

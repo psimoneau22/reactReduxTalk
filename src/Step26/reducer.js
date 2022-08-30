@@ -21,9 +21,9 @@ const { reducer } = createSlice({
             ...state,
             prop1: action.payload,
         }),
-        [doSomethingAsync.error]: (state, action) => ({
+        [doSomethingAsync.rejected]: (state, action) => ({
             ...state,
-            errorMessage: error,
+            errorMessage: action.error.message,
             loading: false,
         })
     }

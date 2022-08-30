@@ -1,1 +1,2 @@
-React.memo, HOC
+- using React.memo
+- what is a HOC (higher order component)

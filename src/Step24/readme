@@ -1,1 +1,4 @@
-using react-redux, toolkit, global state
+- using react-redux,
+- using redux/toolkit
+- what is global state
+- useSelector

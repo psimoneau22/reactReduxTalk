@@ -8,5 +8,5 @@ function Child({ name, value }) {
     )
 };
 
-// export default Child
-export default React.memo(Child)
+export default Child
+// export default React.memo(Child)

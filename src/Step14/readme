@@ -1,4 +1,2 @@
-useMemo hook
-
-: Changes
-    useMemo
+- useMemo hook
+- change to useMemo for complex value computation

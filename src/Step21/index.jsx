@@ -35,12 +35,18 @@ export default function Step21() {
 //     store.subscribe(() => console.log(store.getState()))
 
 //     store.dispatch({ type: 'one'});
-//     store.dispatch({ type: 'two'});
+
+//     setTimeout(() => {
+//         store.dispatch({ type: 'two'});
+//     }, 3000)
+
 //     store.dispatch({ type: 'custom', payload: 56 });
 
 //     return null;
 // }
 
+
+// just for reference
 function reducerBasic(state, action) {
     switch (action.type) {
         case 'one':
